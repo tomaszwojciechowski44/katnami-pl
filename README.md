@@ -8,12 +8,20 @@ Repozytorium strony [katnami.pl](https://katnami.pl) — profesjonalna fotografi
 
 ### 🚀 Szybki start
 
-1. **[MIGRATION_GUIDE.md](MIGRATION_GUIDE.md)** — Krok po kroku: jak skopiować stronę na staging (3 metody: panel hostingu, All-in-One WP Migration, SSH/WP-CLI)
-2. **[CONTENT_PLAN.md](CONTENT_PLAN.md)** — Kompletny plan treści, struktury strony, SEO lokalnego, pakietów cenowych, FAQ, portfolio
-3. **[TEXTS_CONTENT.md](TEXTS_CONTENT.md)** — Gotowe teksty do wklejenia na stronę (hero, landing pages, opisy usług, FAQ, blog)
-4. **[INSTAGRAM_STRATEGY.md](INSTAGRAM_STRATEGY.md)** — Strategia Instagram: reels, posty, stories, współpraca, kalendarz treści, gotowe opisy
-5. **[schema-org.html](schema-org.html)** — Schema.org JSON-LD (LocalBusiness, WeddingPhotographer) — SEO
-6. **[google-analytics-ga4.html](google-analytics-ga4.html)** — Snippet GA4 + konfiguracja konwersji
+#### ⭐ START TUTAJ (dla początkujących):
+1. **[INSTRUKCJA-KROK-PO-KROKU.md](INSTRUKCJA-KROK-PO-KROKU.md)** — Ultra-szczegółowa instrukcja na pierwsze 3 dni (każdy krok opisany dokładnie)
+2. **[CHECKLIST-3-DNI.md](CHECKLIST-3-DNI.md)** — Uproszczona checklista do wydruku (tylko pierwsze 3 dni)
+3. **[QUICK_START.md](QUICK_START.md)** — Szybki przegląd całego projektu (5 min czytania)
+
+#### 📚 Pełna dokumentacja:
+4. **[MIGRATION_GUIDE.md](MIGRATION_GUIDE.md)** — Krok po kroku: jak skopiować stronę na staging (3 metody: panel hostingu, All-in-One WP Migration, SSH/WP-CLI)
+5. **[CONTENT_PLAN.md](CONTENT_PLAN.md)** — Kompletny plan treści, struktury strony, SEO lokalnego, pakietów cenowych, FAQ, portfolio
+6. **[TEXTS_CONTENT.md](TEXTS_CONTENT.md)** — Gotowe teksty do wklejenia na stronę (hero, landing pages, opisy usług, FAQ, blog)
+7. **[INSTAGRAM_STRATEGY.md](INSTAGRAM_STRATEGY.md)** — Strategia Instagram: reels, posty, stories, współpraca, kalendarz treści, gotowe opisy
+8. **[CHECKLIST.md](CHECKLIST.md)** — Pełna checklista wdrożenia (wszystkie 8 tygodni)
+9. **[NEXT_STEPS.md](NEXT_STEPS.md)** — Co dalej? Podsumowanie i motywacja
+10. **[schema-org.html](schema-org.html)** — Schema.org JSON-LD (LocalBusiness, WeddingPhotographer) — SEO
+11. **[google-analytics-ga4.html](google-analytics-ga4.html)** — Snippet GA4 + konfiguracja konwersji
 
 ---
 
