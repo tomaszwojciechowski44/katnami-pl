@@ -1,0 +1,89 @@
+<!-- Google Analytics 4 (GA4) snippet -->
+<!-- Zamień G-XXXXXXXXXX na swój Measurement ID z GA4 -->
+<!-- Wklej w <head> motywu WordPress (functions.php lub wtyczka Insert Headers and Footers) -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<!-- Zdarzenia konwersji (umieść w odpowiednich miejscach) -->
+
+<!-- 1. Wypełnienie formularza kontaktowego (Contact Form 7) -->
+<script>
+document.addEventListener('wpcf7mailsent', function(event) {
+  gtag('event', 'form_submit', {
+    'event_category': 'Kontakt',
+    'event_label': 'Formularz kontaktowy',
+    'value': 1
+  });
+}, false);
+</script>
+
+<!-- 2. Kliknięcie CTA "Zarezerwuj termin" -->
+<script>
+document.querySelectorAll('.cta-reserve').forEach(function(element) {
+  element.addEventListener('click', function() {
+    gtag('event', 'cta_click', {
+      'event_category': 'CTA',
+      'event_label': 'Zarezerwuj termin',
+      'value': 1
+    });
+  });
+});
+</script>
+
+<!-- 3. Wyświetlenie strony pakietów -->
+<script>
+if (window.location.pathname.includes('/pakiety-cennik/')) {
+  gtag('event', 'view_packages', {
+    'event_category': 'Pakiety',
+    'event_label': 'Wyświetlenie pakietów',
+    'value': 1
+  });
+}
+</script>
+
+<!-- 4. Kliknięcie telefonu lub e-mail -->
+<script>
+document.querySelectorAll('a[href^="tel:"], a[href^="mailto:"]').forEach(function(element) {
+  element.addEventListener('click', function(e) {
+    var type = e.target.href.startsWith('tel:') ? 'Telefon' : 'Email';
+    gtag('event', 'contact_click', {
+      'event_category': 'Kontakt',
+      'event_label': type,
+      'value': 1
+    });
+  });
+});
+</script>
+
+<!-- 5. Scroll depth (zaangażowanie) -->
+<script>
+var scrolled = false;
+window.addEventListener('scroll', function() {
+  if (!scrolled && (window.scrollY / document.body.scrollHeight) > 0.5) {
+    scrolled = true;
+    gtag('event', 'scroll_depth', {
+      'event_category': 'Zaangażowanie',
+      'event_label': 'Scroll 50%',
+      'value': 50
+    });
+  }
+});
+</script>
+
+<!-- Konfiguracja celów w GA4:
+1. Przejdź do Admin → Property → Events → Mark as conversion:
+   - form_submit
+   - cta_click
+   - contact_click
+2. Utwórz niestandardowe zdarzenia konwersji jeśli potrzeba.
+3. Sprawdź w Realtime czy zdarzenia są śledzone poprawnie.
+-->
+
